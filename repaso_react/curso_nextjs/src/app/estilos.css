@@ -1,0 +1,148 @@
+:root{
+    --bg-color:#06104F;
+    --txt-color: #696969;
+    --bd-color: #004b73;
+    --ic-color: #6086FF;
+    --ft-color: #6281DF;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#btnMenu,label{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.menu_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.menu_logo .logo_title{
+    color: var(--txt-color);
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.menu_list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu_list a{
+    text-decoration: none;
+    color: var(--txt-color);
+    font-size: 1.5rem;
+    padding: 14px 16px;
+}
+
+/*Sección de Home Container*/
+.home{
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bd-color);
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.home img{
+    position: relative;
+    top: 120px;
+    left: 20px;
+    width: 90%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.home .home_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 200px;
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+}
+
+.home .home_container .title{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--txt-color);
+    font-weight: 200;
+}
+
+.home .home_container .descripcion{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--txt-color);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.home .home_container .button{
+    position: relative;
+    padding: 10px;
+    width: 40%;
+    left: 250px;
+    color: var(--txt-color);
+    background-color: var(--bg-color);
+    border: 1px solid;
+    font-size: 1.5rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* Sección de Proyectos */
+.projects{
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg-color);
+    height: 95vh;
+}
+
+.projects .title{
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+    color: var(--txt-color);
+    font-weight: 100;
+}
+
+.projects .container_projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.projects .container_projects img{
+    width: 620px;
+    height: 350px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+}

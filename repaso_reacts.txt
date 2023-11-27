@@ -1,0 +1,10 @@
+/*REPASO DE REACT CON TYPESCRIPT*/
+
+--Tipo de Dato para un formulario
+Los tipos de datos de un formulario son: FormEvent<HTMLFormElement>
+
+
+--El metodo onChange permite cambiar el estado de un input agregandole
+el estado que queremos 
+
+--El useRef nos permite agregar cursores a los inputs
