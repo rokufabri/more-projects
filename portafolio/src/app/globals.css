@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+:root{
+    --color-general: #F45805;
+    --color-icons: #F4BA05;
+    --color-form: #BD5A03;
+    --color-formatter : rgb(236, 239, 240);
+    --color-gray: #333;
+}
+
+body{
+    background-color: #181818;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-gray);
+}
+
+.navbar .menu{
+    display: flex;
+    padding: 10px;
+}
+
+.navbar .menu li{
+    list-style-type: none;
+}
+
+.navbar .menu li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--color-formatter);
+    transition: all .4s;
+}
+
+.navbar .menu li a:hover{
+    color: var(--color-general);
+}
+
+.navbar .title{
+    font-size: 3rem;
+    color: var(--color-general);
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.navbar .icon{
+    font-size: 2rem;
+    color: var(--color-general);
+}
+
+/* Sección Home */
+
+.hero_main{
+    width: 100%;
+    max-height: 100vh;
+    margin-top: 86px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.hero_main .title{
+    color: var(--color-gray);
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.hero_main .descripcion{
+    font-size: 3rem;
+    padding: 10px;
+    color: var(--color-formatter);
+}
+
+.hero_main .contact{
+    width: 150px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--color-general);
+    color: var(--color-formatter);
+    cursor: pointer;
+    box-shadow: 10px 10px 15px var(--color-general);
+}
+
+.hero_main img{
+    margin-top: -50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Sección Sobre Mi */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .title{
+    color: var(--color-general);
+    font-size: 2rem;
+    padding-top: 60px;
+    font-weight: 100;
+}
+
+.about .descripcion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.about .descripcion .images{
+    border-radius: 20px;
+    padding: 10px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.about .descripcion .me{
+    margin-right: 140px;
+    padding: 10px;
+    color: var(--color-formatter);
+}
+.about .descripcion .subtitle{
+    color: var(--color-formatter);
+}
+
+.about .descripcion .subtitle .name{
+    color: var(--color-general);
+}
+
+.about .descripcion .me .personal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width:900px){
+    .navbar{
+        width: 100%;
+    }
+    .navbar .menu{
+        display: none;
+    }
+    .hero_main{
+        grid-template-columns: repeat(1,1fr);
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .hero_main .hero_images{
+        width: 550px;
+        height: 400px;
+    }
+
+    .about .descripcion{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about .descripcion .me{
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    .about .descripcion .images{
+        position: relative;
+        left: 90px;
+    }
+}
